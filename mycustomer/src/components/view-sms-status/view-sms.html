@@ -1,0 +1,40 @@
+
+<ion-header>
+    <ion-navbar>
+        <ion-title>
+           View SMS
+        </ion-title>
+    </ion-navbar>
+</ion-header>
+<ion-content>
+
+
+
+<ion-list>
+
+  <ion-item-divider>
+    Approved
+  </ion-item-divider>
+
+    <ion-item *ngFor="let sms of allSms | smsFilter:'pendding' ">
+      {{sms.MessageName}}
+
+    </ion-item>
+
+
+
+  <ion-item-divider>
+    Pending
+  </ion-item-divider>
+
+
+  <ion-item-divider>
+    Rejected
+  </ion-item-divider>
+
+
+
+
+</ion-list>
+
+</ion-content>

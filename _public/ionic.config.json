@@ -1,0 +1,12 @@
+{
+  "name": "public",
+  "app_id": "b3f80ecb",
+  "v2": true,
+  "typescript": true,
+  "proxies": [
+    {
+      "path": "/api",
+      "proxyUrl": "http://localhost:3000/"
+    }
+  ]
+}

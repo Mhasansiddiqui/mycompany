@@ -1,0 +1,16 @@
+
+<ion-tabs>
+  
+  <ion-tab [root]="rootPage" tabTitle="DashBoard" tabIcon="planet">DashBoard</ion-tab>
+  <ion-tab [root]="Customer" tabTitle="Customer" tabIcon="person-add"></ion-tab>
+  <ion-tab [root]="Sms" tabTitle="Send SMS" tabIcon="phone-portrait"></ion-tab>
+  <ion-tab [root]="Campaign" tabTitle="Send Offers" tabIcon="send"></ion-tab>
+  <ion-tab [hidden]="isAdmin"  [root]="Profile" tabTitle="Profile" tabIcon="contact"></ion-tab>
+  <!--<ion-tab [root]="Settings" tabTitle="Setting" tabIcon="settings"></ion-tab>-->
+  <ion-tab [root]="Notification" 
+        tabTitle="Notification" 
+        (click)="clearNotification()"
+        tabBadge="{{count}}" tabIcon="notifications"
+        onclick="clearNotification()">
+  </ion-tab>
+</ion-tabs>

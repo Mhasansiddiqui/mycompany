@@ -1,0 +1,64 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Create Branch
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content>
+  <ion-list>
+
+    <ion-item>
+      <ion-label color="primary" stacked>COMPANY NAME</ion-label>
+      <ion-input #branchName type="text" #companyName placeholder="COMPANY NAME"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label color="primary" stacked>OWNER NAME</ion-label>
+      <ion-textarea #ownerName placeholder="OWNER NAME"></ion-textarea>
+    </ion-item>
+
+    <ion-item>
+      <ion-label color="primary" stacked>OWNER NUMBER</ion-label>
+      <ion-textarea #ownerNumber placeholder="OWNER NUMBER"></ion-textarea>
+    </ion-item>
+
+    <!--<ion-item>
+      <ion-label color="primary" stacked>PROFILE PIC</ion-label>
+      <ion-textarea #branchEmail placeholder="PROFILE PIC"></ion-textarea>
+    </ion-item>-->
+
+    <ion-item>
+      <ion-label color="primary" stacked>ADDRESS</ion-label>
+      <ion-textarea #address placeholder="ADDRESS"></ion-textarea>
+    </ion-item>
+    
+       <ion-item>
+      <ion-label color="primary" stacked>LANDLINE</ion-label>
+      <ion-textarea #landline placeholder="ADDRESS"></ion-textarea>
+    </ion-item>
+
+    <ion-item>
+      <ion-label color="primary" stacked>Business Type</ion-label>
+      <ion-textarea #branchType placeholder="Business Type"></ion-textarea>
+    </ion-item>
+
+    <ion-item>
+      <ion-label color="primary" stacked>Sender ID</ion-label>
+      <ion-textarea #senderId placeholder="Sender ID"></ion-textarea>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Assign User</ion-label>
+      <ion-select [(ngModel)]="user" multiple="false">
+        <ion-option [value]="user" *ngFor="let user of allUsers">{{user.Email}}</ion-option>
+      </ion-select>
+    </ion-item>
+
+    {{user | json}}
+  </ion-list>
+
+  <div style="text-align:center;margin-top:10px" (click)="createBranch(branchName.value,ownerName.value,ownerNumber.value ,address.value,branchType.value,senderId.value,user._id,landline.value)">
+    <button ion-button color="secondary" round>Create Branch</button>
+  </div>
+</ion-content>

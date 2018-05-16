@@ -1,0 +1,14 @@
+
+{
+    "name": "mycustomer",
+    "app_id": "0a715409",
+    "typescript": true,
+    "v2": true,
+    "proxies": [
+ 
+        {
+            "path": "/api",
+            "proxyUrl": "https://localhost:3000/"
+        }
+    ]
+}

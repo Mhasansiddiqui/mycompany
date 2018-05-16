@@ -1,0 +1,25 @@
+{
+  "name": "my_customer",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index"
+  },
+  "keywords": [
+    "examle",
+    "heoku"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.15.1",
+    "express": "^4.13.4",
+    "firebase": "^3.0.3",
+    "ionic-push-server": "^1.1.1",
+    "mongoose": "^4.4.20",
+    "mongoose-deep-populate": "^3.0.0",
+    "node-gcm": "^0.14.3",
+    "q": "^1.4.1"
+  }
+}

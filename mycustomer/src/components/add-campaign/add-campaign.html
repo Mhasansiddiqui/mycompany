@@ -1,0 +1,47 @@
+
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Campaign
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content>
+  <ion-list>
+
+    <ion-item>
+      <ion-label color="primary" stacked>Campaign Name</ion-label>
+      <ion-input #branchName type="text" #campaignName placeholder="Campaign Name"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label color="primary" stacked>Enter Text to Send</ion-label>
+      <ion-input #branchName type="text" #campaignText placeholder="Enter Text to Send"></ion-input>
+    </ion-item>
+
+
+    <ion-item>
+      <ion-label>Select Recent Campaign</ion-label>
+      <ion-select [(ngModel)]="campaign" multiple="true">
+        <ion-option [value]="campaign" *ngFor="let campaign of campaigns">{{campaign | json}}</ion-option>
+      </ion-select>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Select the Customer List to send</ion-label>
+      <ion-select [(ngModel)]="customer" multiple="true">
+        <ion-option [value]="customer" *ngFor="let customer of customers">{{customer | json}}</ion-option>
+      </ion-select>
+    </ion-item>
+
+    <div style="text-align:center;margin-top:10px" (click)="createCampaign(
+      campaignName.value,
+      campaignText.value,
+      campaign?._id,
+      customer?._id
+      )">
+      <button ion-button color="secondary" round>Create Branch</button>
+    </div>
+
+  </ion-list>
+</ion-content>

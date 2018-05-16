@@ -1,0 +1,51 @@
+<ion-header>
+    <ion-navbar>
+        <ion-title>
+            Customer
+        </ion-title>
+    </ion-navbar>
+</ion-header>
+<ion-content class="home">
+
+    <ion-grid>
+        <ion-row>
+            <ion-col col-6>
+                <ion-card>
+                    <ion-card-content (click)="goToAddCustomer()">
+
+                        <div> Add Customer
+                            <ion-avatar>
+                                <img src="icons/addUser.svg">
+                            </ion-avatar>
+                        </div>
+                    </ion-card-content>
+                </ion-card>
+            </ion-col>
+            <ion-col col-6>
+                <ion-card>
+                    <ion-card-content>
+
+                        <div (click)="goToViewCustomer()"> View Customer
+                            <ion-avatar>
+                                <img src="icons/searchUser.svg">
+                            </ion-avatar>
+                        </div>
+                    </ion-card-content>
+                </ion-card>
+            </ion-col>
+        </ion-row>
+
+
+        <!--        <ion-row>
+            <ion-col col-1>
+                <ion-card>
+                    <ion-card-content>
+                       
+                    </ion-card-content>
+                </ion-card>
+        </ion-row>-->
+    </ion-grid>
+
+
+
+</ion-content>

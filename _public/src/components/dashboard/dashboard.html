@@ -1,0 +1,39 @@
+<ion-grid style="height:100%" *ngIf="!isAdmin">
+  <ion-row style="height:50%">
+    <ion-col col-6 padding>
+      <!--<img src="./icons/credit-card.svg" alt="">-->
+      <ion-icon name="card"></ion-icon>
+        <h3  ion-text>Balance SMS Credits</h3>
+        <h4 ion-text>Total : <span ion-text color="primary">$400</span> </h4> 
+        <h4 ion-text>Used : <span ion-text color="primary">$200</span> </h4> 
+        <h4 ion-text>Remaining : <span ion-text color="primary">$200</span> </h4> 
+    </ion-col>
+    <ion-col col-6 padding>
+      <!--<img src="./icons/list.svg" alt="">-->
+      <ion-icon name="git-branch"></ion-icon>
+      
+      <h3 ion-text>No of Customers of branch</h3>
+      <h4 >Current User : <span ion-text color="primary">50</span> </h4>
+     
+    </ion-col>
+  </ion-row>
+  <ion-row style="height:50%">
+
+    <ion-col padding col-6 (click)="createSms()">
+      <img src="./icons/smartphone.svg" alt="">
+      <!--<ion-icon name="send"></ion-icon>
+      Create SMS Templates--></ion-col>
+    <ion-col padding col-6 (click)="addCustomer()">
+      <img src="./icons/team.svg" alt="">
+      <!--<ion-icon name="person-add"></ion-icon>-->
+      <!--Create List to add customers-->
+    </ion-col>
+  </ion-row>
+
+
+
+
+
+</ion-grid>
+
+<div *ngIf="isAdmin">hi to the world</div> 

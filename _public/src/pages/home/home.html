@@ -1,0 +1,14 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons   (click)="logout()" right><button ion-button>Logout</button></ion-buttons>
+    <ion-title>dashboard</ion-title>
+    <ion-buttons left>
+      <button *ngIf="isAdmin" ion-button menuToggle><ion-icon name="menu"></ion-icon></button>
+    </ion-buttons>
+  </ion-toolbar>
+
+</ion-header>
+
+<ion-content>
+  <dashboard [isAdmin]="isAdmin"></dashboard>
+</ion-content>

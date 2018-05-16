@@ -1,0 +1,16 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      View Customers
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+ <ion-item (click)="goToViewCustomer(customer)" text-wrap *ngFor="let customer of customers">
+    <div><ion-icon name="person" item-start></ion-icon>{{customer.CustomerName}}</div>
+    <div item-end><ion-icon name="mail" item-start></ion-icon>{{customer.CustomerEmail}}</div>
+    <div><ion-icon name="call" item-start></ion-icon> {{customer.MobileNo}}</div>
+  </ion-item>
+
+</ion-content>

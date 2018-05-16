@@ -1,0 +1,64 @@
+
+<ion-menu [content]="content">
+  <ion-header>
+    <ion-toolbar>
+      <ion-title>ADMIN MENUE</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content>
+    <ion-list>
+
+      <ion-item-divider>
+        BRANCH
+      </ion-item-divider>
+      <button ion-item (click)="createBranch()">
+        Create Branch
+      </button>
+      <button ion-item (click)="checkBranchStatus()">
+        Branch Status
+      </button>
+      <button ion-item (click)="branchList()">
+        List Of Branches
+      </button>
+
+      <ion-item-divider>
+        User
+      </ion-item-divider>
+      <button ion-item (click)="createUser()">
+        Create User
+      </button>
+
+      <ion-item-divider>
+        SMS
+      </ion-item-divider>
+      <button ion-item>
+        Send SMS To Branches
+      </button>
+      <button ion-item>
+        Purchase SMS Credit
+      </button>
+      <button ion-item (click)="SMS()">
+        SMS Templates
+      </button>
+      
+      <ion-item-divider>
+        OFFERS & REMINDER
+      </ion-item-divider>
+      <button ion-item (click)="campaign()">
+        Create New Offers
+      </button>      
+      <button ion-item  (click)="Createreminder()">
+        Reminder
+      </button>
+
+
+
+    </ion-list>
+  </ion-content>
+</ion-menu>
+
+<ion-nav id="nav" #content [root]="rootPage"></ion-nav>
+
+<ion-nav id="nav" #root [root]="rPage"></ion-nav>
+
+

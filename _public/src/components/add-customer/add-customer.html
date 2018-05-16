@@ -1,0 +1,45 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Customer
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-item>
+      <ion-label color="primary" stacked>Name</ion-label>
+      <ion-input #name type="text" placeholder="Name Input"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label color="primary" fixed>Phone</ion-label>
+      <ion-input #phone type="tel" placeholder="Tel Input"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label color="primary" stacked>Email</ion-label>
+      <ion-input #email type="email" placeholder="Email Input"></ion-input>
+    </ion-item>
+
+
+
+    <ion-item>
+      <ion-label>SELECT SMS</ion-label>
+      <ion-select [(ngModel)]="sms" multiple="false">
+        <ion-option [value]="sms" *ngFor="let sms of allSms">{{sms.MessageName}}</ion-option>
+      </ion-select>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Add More Customer</ion-label>
+      <ion-select [(ngModel)]="customer" multiple="true">
+        <ion-option [value]="customer" *ngFor="let customer of allCustomers">{{customer.CustomerName}}</ion-option>
+      </ion-select>
+    </ion-item>
+
+  </ion-list>
+
+  <div style="text-align:center;margin-top:10px" (click)="addCustomer(sms,customer,name.value,phone.value,email.value)">
+    <button ion-button color="secondary" round>Add Cutomer</button>
+  </div>
+</ion-content>

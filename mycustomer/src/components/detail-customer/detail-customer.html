@@ -1,0 +1,65 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Customer Detail
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-list>
+
+    <ion-list-header>
+      Name : {{customer.CustomerName}}
+    </ion-list-header>
+
+
+    <ion-item>
+       Mobile : {{customer.MobileNo}}
+    </ion-item>
+
+    <ion-item>
+       Email : {{customer.CustomerEmail}}
+    </ion-item>
+
+
+    <ion-item>
+       Date : {{customer.createdOn | date:'short'}}
+    </ion-item>
+
+    <ion-item detail-push>
+       Sms
+    </ion-item>
+
+
+  </ion-list>
+  <!--
+  <ion-card>
+
+    <ion-card-header>
+
+    </ion-card-header>
+
+    <ion-card-content>
+      <!--<ion-item>
+       {{customer.CustomerName}}
+    </ion-item>
+      <ion-list>
+        <ion-item>
+          Mobile {{customer.MobileNo}}
+        </ion-item>
+
+        <ion-item detail-push>
+          Sms {{customer.Sms}}
+        </ion-item>
+
+        <ion-item>
+          Date {{customer.createdOn}}
+        </ion-item>
+      </ion-list>
+
+    </ion-card-content>
+
+  </ion-card>-->
+</ion-content>

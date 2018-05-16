@@ -1,0 +1,132 @@
+ionic plugin add phonegap-plugin-push --variable SENDER_ID="447999272260"
+
+ // "SENDER_ID": "1074521385492"
+
+ionic platform add android
+ionic plugin rm phonegap-plugin-push
+ionic plugin add phonegap-plugin-push --variable SENDER_ID="GCM_PROJECT_NUMBER"
+
+ionic config set gcm_key <your-gcm-project-number>
+ionic plugin add phonegap-plugin-push --variable SENDER_ID="447999272260"
+ionic config set gcm_key "447999272260"
+
+curl -X POST -H "Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJmMGJjMzU2OS0xMjg0LTRhZWEtOWZkMy1mYWIxOGQ0YjNjZjUifQ.I-3KvBzvh1l3ndBDlafUPv8DrVErfFxqRU4tXocBFYg" -H "Content-Type: application/json" -d '
+{"tokens": ["DEV-71fbdbc4-9c72-4a5c-abce-7421240ab1e9"],"profile": "test","notification": { "message": "This is my demo push!"
+}
+}' "https://api.ionic.io/push/notifications"
+
+Mobile app for 
+for MY BRANCH OUTLETS to Create, Maintain List of Customers
+Maintain Customer Relationships & Keep them with you by staying in touch
+
+BRANCH FEATURES:
+* BRANCHES shall fill customer details & 
+* automated SMS to be sent to customers from BRANCH iD - 
+with standard SMS like “THANKING YOU FOR SHOPPING WITH US” ETC., 
+
+* branches shall view their list of customers. 
+
+* Branch Profile page can be edited by Branch admin
+* App in English and Tamil. & SMS also in 2 languages. 
+* Receive Notification from Admin regarding Offers/Updates etc., 
+
+
+AM AIMING THE BRANCH CAN USE THIS APP 
+
+1. FOR SPEEDY WORK 
+2. MAINTAIN GOOD RELATIONSHIP WITH CUSTOMER
+3. GENERATE TOTAL SALES FOR DAY/MONTH/YEAR/SPECIFIC PERIOD
+
+BECAUSE THESE DAYS COMPETITION IS MORE & MORE 
+CUSTOMER RELATION IS VERY MUCH ESSENTIAL
+
+Screens/Pages 
+
+** Login 
+- User Credentials to login
+
+** Dashboard 
+- Balance SMS Credits
+- No. of Customers of his branch
+- Create SMS Templates (set one as default)
+- Create List to add customers to (set one as default)
+
+** Add Customers
+- NAME
+- MOBILE NUMBER 
+- EMAIL 
+- Select SMS to send
+- Select List to add Customer to 
+SUBMIT- RESET 
+
+
+
+* View customers 
+- Name 
+- Mobile Number
+- Email ID
+
+** Send Offers
+- Campaign Name
+- Enter Text to Send
+- Select Recent Campaign
+- Select the Customer List to send
+
+** Profile page 
+- COMPANY NAME:
+- OWNER NAME:
+- OWNER NUMBER:
+- PROFILE PIC:
+- ADDRESS:
+- LANDLINE:
+- MOBILE NO.:
+- Business Type:
+- Sender ID: (6 letter only) - ONLY FROM THIS SENDER ID THE SMS FROM BRANCH WILL GO TO CUSTOMER
+
+** Settings
+- Create Staff Login - With options to select Feature to enable for staff
+-
+
+
+
+ADMIN Features:
+
+#. All Features of BRANCH OWNER +
+1. Add /Approve/ Disapprove/ Hold Service/ Delete BRANCH LOGIN
+2. Purchase SMS Credit in BULK & Allot certain SMS Credit to each Branch
+3. Send Push Notifications to Branches
+    a. NEW OFFERS admin will be able to create new offers
+    b. REMIND TO MAKE REPORTS/P-AYMENTS it will remind branch owners 
+    
+4. ADMIN TO VIEW LIST OF BRANCHES & OWNER DETAILS & SMS Credit balance
+5. SEND SMS TO 
+- BRANCH OWNERS or
+- BANCH WISE CUSTOMERS or 
+- ALL CUSTOMERS IN DATABASE 
+6. Add /Approve/ Disapprove/ Hold Service/ Delete SMS TEMPLATES
+7. View List of Branches with SMS Credit Less than 100
+
+
+
+AUTOMATED NOTIFICATIONS:
+
+#. When Branch User doesnot use the App for THREE Continuous Days - A Notification Message Assigned by Admin will go
+#. When the SMS Credit is Below 100 - Notification Stating “Your SMS Credit is Low - Please Top-Up to Stay in touch with Customers
+#. When the SMS Credit is Below 25 - Notification Stating “Your SMS Credit is Critically Low - Please Top-Up Immediately to Stay in touch with Customers
+#. When Customer List reaches 100 - I mean for Every 100 Customer, “CONGRATULATION YOU HAVE ADDED A CENTURY OF CUSTOMERS, KEEP GROWING … "
+
+
+
+
+
+
+IN FUTURE AM PLANNING TO:
+
+1. ENABLE AMOUNT WHILE THEY REGISTER CUSTOMER - AND A SHORT PRODUCT DETAIL NOTE.
+2. WHEN THE SAME CUSTOMER IS COMING BACK, APP SHALL REMIND THE BRANCH OWNER THAT HIS IS "5TH TIME CUSTOMER" - SO THAT HE CAN DEAL ACCORDINGLY WITH CUSTOMER
+3. HE CAN MAKE DAILY REPORTS WITH TOTAL AMOUNT OF SALES. 
+4. SEND MARKETING MAILS TO HIS CUSTOMERS 
+5. GET REPORT OF MOST REPEATED CUSTOMER WISE LIST
+6. GET REPORT OF HIGHEST AMOUNT PURCHASED CUSTOMER WISE LIST
+ETC., 
+7. CREATE OTP FOR LOGIN FOR SECURITY

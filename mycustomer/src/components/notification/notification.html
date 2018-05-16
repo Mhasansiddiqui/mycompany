@@ -1,0 +1,17 @@
+<ion-header>
+    <ion-navbar>
+        <ion-title>
+            Notifications
+        </ion-title>
+    </ion-navbar>
+</ion-header>
+<ion-content>
+    <ion-item text-wrap *ngFor="let message of messages">
+        <div>
+            <ion-icon name="person" item-start></ion-icon>{{message.MessageName}}</div>
+        <div item-end>
+            <ion-icon name="mail" item-start></ion-icon>{{message.MessasgeBody}}</div>
+      
+    </ion-item>
+
+</ion-content>

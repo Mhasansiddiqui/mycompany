@@ -1,0 +1,32 @@
+<ion-header>
+  <ion-navbar hideBackButton="true">
+    <ion-title>login</ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content>
+  <ion-list>
+    <ion-item>
+      <ion-label>Username</ion-label>
+      <ion-input #email value="user02" type="text"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Password</ion-label>
+      <ion-input #password value="user02" type="password"></ion-input>
+    </ion-item>
+
+  </ion-list>
+
+  <!--<div style="text-align: center">
+    <button (click)="customer()" ion-button round>SignIn As Customer</button>
+  </div>
+  <div  style="text-align: center">
+   <button (click)="admin()" ion-button round>SignIn As Admin</button>
+  </div>-->
+
+  <div style="text-align: center">
+    <button (click)="signIn(email,password)" ion-button round>SignIn</button>
+  </div>
+</ion-content>

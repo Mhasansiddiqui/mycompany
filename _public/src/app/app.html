@@ -1,0 +1,56 @@
+<!--<ion-nav [root]="rootPage"></ion-nav>-->
+
+<ion-menu [content]="content">
+  <ion-header>
+    <ion-toolbar>
+      <ion-title>ADMIN MENUE</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content>
+    <ion-list>
+
+      <button ion-item (click)="createBranch()">
+        CREATE BRANCH
+      </button>
+      <button ion-item (click)="createUser()">
+        Create USER
+      </button>
+      <button ion-item>
+        BRANCH STATUS
+      </button>
+      <button ion-item>
+        LIST OF BRANCHES
+      </button>
+      <button ion-item>
+        SEND SMS TO BRANCHES
+      </button>
+      <button ion-item>
+        Purchase SMS Credit
+      </button>
+      <button ion-item>
+        Send Notifications 
+      </button>
+      <button ion-item>
+        Create NEW OFFERS
+      </button>
+      <button ion-item>
+        SMS TEMPLATES
+      </button>
+      <button ion-item>
+        REMINDER
+      </button>
+
+
+    </ion-list>
+  </ion-content>
+</ion-menu>
+<ion-nav id="nav" #content [root]="rootPage"></ion-nav>
+
+<ion-tabs>
+  <ion-tab #root [root]="rootPage" tabTitle="DashBoard" tabIcon="planet">DashBoard</ion-tab>
+  <ion-tab [root]="Customer" tabTitle="Customer" tabIcon="person-add"></ion-tab>
+  <ion-tab [root]="Sms" tabTitle="Send Offers" tabIcon="send"></ion-tab>
+  <ion-tab [root]="Profile" tabTitle="Profile" tabIcon="contact"></ion-tab>
+  <ion-tab [root]="Settings" tabTitle="Setting" tabIcon="settings"></ion-tab>
+  <ion-tab [root]="Notification" tabTitle="Notification" tabIcon="notifications"></ion-tab>
+</ion-tabs>

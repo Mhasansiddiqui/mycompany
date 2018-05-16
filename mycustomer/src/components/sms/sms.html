@@ -1,0 +1,43 @@
+<ion-header>
+    <ion-navbar>
+        <ion-title>
+            SMS
+        </ion-title>
+    </ion-navbar>
+</ion-header>
+<ion-content class="home">
+
+    <ion-grid>
+        <ion-row>
+            <ion-col col-6>
+                <ion-card>
+                    <ion-card-content (click)="goToRequestSms()">
+
+                        <div> Request SMS
+                            <ion-avatar>
+                                <img src="icons/requestSms.svg">
+                            </ion-avatar>
+                        </div>
+                    </ion-card-content>
+                </ion-card>
+
+            </ion-col>
+            <ion-col col-6>
+                <ion-card>
+                    <ion-card-content (click)="goToViewSms()">
+
+                        <div> SMS Template Status
+                            <ion-avatar>
+                                <img src="icons/message_template.svg">
+                            </ion-avatar>
+                        </div>
+                    </ion-card-content>
+                </ion-card>
+            </ion-col>
+        </ion-row>
+
+    </ion-grid>
+
+
+
+</ion-content>
